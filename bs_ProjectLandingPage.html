@@ -13,12 +13,62 @@
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		
-		<!-- [if lt IE 9] -->
+		<!-- [if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<!--[endif]-->
+		<![endif]-->
 		
 		<style type="text/css">
+			
+			.navbar-brand {
+				font-size: 1.6em;
+			}
+			#topContainer {
+				background-image: url(images/background-picjumbo3.jpg);
+				height: 100px;
+				width: 100%;
+				background-size: cover;
+			}
+			#topRow {
+				margin-top: 100px;
+				text-align: center;
+				font-family: "Times New Roman", Times, serif;
+				
+			}
+			#topRow h1 {
+				font-size: 310%;
+				text-transform: uppercase;
+				color: #94768C;
+			}
+			.bold {
+				font-size: bold;
+			}
+			.margin-top {
+				margin-top: 115px;
+			}
+			.margin-top-email {
+				margin-top: 385px;
+			}
+			.margin-top-submit-btn {
+				margin-top: 30px;
+			}
+			.center {
+				text-align: center;
+			}
+			.title {
+				margin-top: 50px;
+				font-size: 260%;
+			}
+			#footer {
+				background-color: #F8F8F8;
+				width: 100%;
+			}
+			.marginBottom{
+				margin-bottom: 30px;
+			}
+			.collectionImage {
+				margin-top: 50px;
+			}
 		
 		</style>
 	
@@ -26,12 +76,117 @@
 	
 	<body>
 		
-		<div>Test...</div>
+		<div class="navbar navbar-default navbar-fixed-top">	
+			<div class="container">
+				
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">{logo}</a>
+				</div> <!--navbar header end-->
+				
+				<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contect">Contect</a></li>
+						</ul>
+					
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="email" placeholder="Email" class="form-control" />
+						</div> <!-- navbar e-mail input form end-->
+						<div class="form-group">
+							<input type="password" placeholder="Password" class="form-control" />
+						</div>
+						<button type="submit" class="btn btn-primary">Log In</button>
+						<!--<button type="submit" class="btn btn-primary">Sign Up</button>-->
+					</form>	
+				</div><!--navbar collapse end-->
+	
+			</div><!--navbar container end-->
+		</div> <!--navbar div end-->
+		
+		<div class="container contentContainer" id="topContainer">			
+			<div class="row">	
+				<div class="col-md-6 col-md-offset-3" id="topRow">
+					<h1 class="margin-top">Sona's Exquisite Apparel</h1>
+					<p class="lead"></p>
+					
+					<form class="margin-top-email">
+						<div class="input-group">
+							<span class="input-group-addon">@</span>
+							<input class="form-control" type="email" placeholder="Interested? Join our mailing list!" />
+						</div>
+						<input type="submit" class="btn btn-primary btn-lg margin-top-submit-btn" />
+					</form>
+				
+				</div>		
+			</div>
+		</div> <!--top container end-->
+		
+		<div class="container contentContainer">
+			
+			<div class="row" class="center">
+				<h1 class="center title">Large collection of Latest Trends &amp; Custom Made Clothes</h1>
+				<p class="lead center">Own an  item of clothing that is truly unique and suited to your tastes. <span class="glyphicon glyphicon-heart"></span></p>
+			</div>
+			
+			<div class="row marginBottom">
+				
+				<div class="col-md-4 margin-top-submit-btn center">
+					<button type="button" class="btn btn-primary btn-lg btn-block margin-top-submit-btn lead">Suites</button>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /></p>
+					<p>Add content for suites collection.</p>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /></p>
+				
+				</div>
+				
+				<div class="col-md-4 margin-top-submit-btn center">
+					<button type="button" class="btn btn-primary btn-lg btn-block margin-top-submit-btn lead">Sarees</button>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /> </p>
+					<p>Add content for Sarees collection.</p>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /></p>
+				</div>
+				
+				<div class="col-md-4 margin-top-submit-btn center">
+					<button type="button" class="btn btn-primary btn-lg btn-block margin-top-submit-btn lead">Lehengas</button>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /> </p>
+					<p>Add content for Lehengas collection.</p>
+					<p class="collectionImage img-thumbnail"><img src="images/mainTest.png" /></p>
+				</div>
+
+			</div>
+		</div> <!--second container end-->
+		
+		<div class="container" id="footer">
+			
+			<div class="row">
+				<p class="center ">Sona's Exquisite Indian Apparel was founded by Sonika Kahlon in May 1998 and is now located in Tracy, CA</p>
+			</div>
+			
+		
+		</div>
+		
+		
+		
+		
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		
+		<script>
+			
+			$(".contentContainer").css("min-height",$(window).height()); //background image height based on window size
+				
+		
+		
+		</script>
 		
 	</body>
 
